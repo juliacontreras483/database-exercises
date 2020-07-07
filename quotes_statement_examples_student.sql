@@ -35,15 +35,21 @@ SELECT * FROM quotes WHERE id = 5;
 
 -- TODO TOGETHER: Select all from quotes where quote contains(is like) "the"
 
-
+SELECT * FROM quotes WHERE quote LIKE '%the%';
 
 
 
 /*********************** UPDATE ***********************/
 -- TODO TOGETHER: View all quotes
 
+SELECT * FROM quotes;
 
 -- TODO TOGETHER: Update quote 4 to first name = Samuel and last name = Clemens
+
+SELECT * FROM quotes WHERE id = 4;
+SELECT author_first_name, author_last_name FROM quotes WHERE id = 4;
+
+UPDATE quotes SET author_first_name = 'Samuel', author_last_name = 'Clemens' WHERE id = 4;
 
 /*********************** DELETE ***********************/
 
