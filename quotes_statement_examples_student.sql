@@ -7,9 +7,13 @@ USE quotes_db;
 SELECT 'These are author lase names' AS 'First select Query';
 
 SELECT author_last_name, quote FROM quotes;
+
+
 -- TODO TOGETHER: Select all information from the quotes table. Before the output, add a caption explaining the results.
 -- Notice how the id has been auto-incrementing on each insert.
 
+SELECT 'This is all the info from the quotes table' AS '2nd Select Query';
+SELECT * FROM quotes;
 
 /*********************** WHERE ***********************/
 
@@ -54,9 +58,16 @@ UPDATE quotes SET author_first_name = 'Samuel', author_last_name = 'Clemens' WHE
 /*********************** DELETE ***********************/
 
 -- TODO TOGETHER: Delete quote with id 3. Then view the output.
+SELECT * FROM quotes;
 
+SELECT * FROM quotes WHERE id = 3;
+DELETE FROM quotes WHere id = 3;
+
+SELECT * FROM quotes;
 
 
 /*********************** TRUNCATE ***********************/
 -- TODO TOGETHER: Truncate quotes table.... there is no going back! Deletes all records.
 
+TRUNCATE quotes;
+SELECT * FROM quotes;

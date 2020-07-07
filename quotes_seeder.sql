@@ -19,8 +19,8 @@ VALUES  ('Douglas', 'Adams', 'Don''t panic'),
 INSERT INTO quotes (author_first_name, author_last_name, quote)
 VALUES (DEFAULT, 'Orsinger', 'TAKE THE LOOP OUT!');
 
--- INSERT INTO quotes (author_first_name, author_last_name, quote)
--- VALUES ('Iroh', 'Sharing tea is fun!');
+INSERT INTO quotes (author_last_name, quote)
+VALUES ('Iroh', 'Sharing tea is fun!');
 
 INSERT INTO quotes (author_first_name, author_last_name, quote)
 VALUES ('Julia', 'Vasquez', 'I may not have gone where I intended to be, but I am where I am suppose to be');
