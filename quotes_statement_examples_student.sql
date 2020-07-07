@@ -4,8 +4,9 @@ USE quotes_db;
 /*********************** SELECT ***********************/
 
 -- TODO TOGETHER: View the author last name and the quote from quotes. Before the output, add a caption explaining the results.
+SELECT 'These are author lase names' AS 'First select Query';
 
-
+SELECT author_last_name, quote FROM quotes;
 -- TODO TOGETHER: Select all information from the quotes table. Before the output, add a caption explaining the results.
 -- Notice how the id has been auto-incrementing on each insert.
 
@@ -14,9 +15,23 @@ USE quotes_db;
 
 -- TODO TOGETHER: View quotes by Douglas Adams.
 
+SELECT quote FROM quotes WHERE author_last_name = 'Adams';
+
+SELECT quote
+FROM quotes
+WHERE author_last_name = 'Adams';
+
 -- TODO TOGETHER: View quotes by Douglas Adams. Add a caption
 
+SELECT quote AS 'Douglas Adams Quotes' FROM quotes WHERE author_last_name = 'Adams';
+
+SELECT quote AS 'Quotes by Douglas Adams' FROM quotes WHERE author_last_name = 'Adams';
+
+
 -- TODO TOGETHER: View quote with primary key (in this case id) of 5
+
+SELECT * FROM quotes WHERE id = 5;
+
 
 -- TODO TOGETHER: Select all from quotes where quote contains(is like) "the"
 
